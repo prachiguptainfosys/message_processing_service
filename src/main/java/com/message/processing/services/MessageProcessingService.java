@@ -85,11 +85,11 @@ public class MessageProcessingService
    */
   public boolean processCount()
   {    
-    if (counter % 3 == 0 && counter < 50)
+    if (counter % 10 == 0 && counter < 50)
     {
       displayNumberOfSales();
     }
-    if (counter >= 5)
+    if (counter >= 50)
     {
       stopProcessingMessages();
       return false;
